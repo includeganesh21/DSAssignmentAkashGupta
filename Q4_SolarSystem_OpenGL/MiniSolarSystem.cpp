@@ -1,11 +1,3 @@
-Sure! Here's a basic minimal implementation for your mini solar system project with:
-
-* `MiniSolarSystem.cpp` — OpenGL setup, simple animation & rendering.
-* `VertexShader.glsl` — vertex shader with model/view/projection.
-* `FragmentShader.glsl` — fragment shader with coloring and simple pulsing effect for the Sun.
-
----
-
 ### MiniSolarSystem.cpp
 
 ```cpp

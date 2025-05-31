@@ -1,46 +1,77 @@
 
----
-
-### ✅ `Q1_LRUCache/README.md` (Detailed per-question readme)
-
-```markdown
+````markdown
 # Q1: Least Recently Used (LRU) Cache
 
-## 🧩 Problem
+## 🧩 Problem Statement
 
-Implement an **LRU (Least Recently Used) Cache** that supports the following operations in `O(1)` average time complexity:
+Design and implement a **Least Recently Used (LRU) Cache**. A cache has a fixed capacity, and when it exceeds that capacity, it must evict the **least recently used** item to make space for the new one.
 
-- `get(key)`: Return the value if key exists, else return `-1`.
-- `put(key, value)`: Insert or update the value. Evict the least recently used item if the cache exceeds capacity.
+Implement the following operations:
+
+- `get(key)`: Return the value of the key if it exists in the cache, otherwise return `-1`.
+- `put(key, value)`: Update or insert the value. If the cache is full, remove the least recently used item before inserting.
+
+---
+
+## 🔧 Function Signatures
+
+```cpp
+class LRUCache {
+public:
+    LRUCache(int capacity);
+    int get(int key);
+    void put(int key, int value);
+};
+````
 
 ---
 
 ## 📘 Constraints
 
-- 1 <= capacity <= 3000  
-- 0 <= key, value <= 10^4  
-- Up to 10^5 operations  
-- All operations must be O(1)
+* `1 <= capacity <= 3000`
+* `0 <= key, value <= 10^4`
+* Maximum number of operations: `10^5`
+* All operations must be done in **O(1)** time complexity
 
 ---
 
-## 💡 Approach
+## 💡 Example
 
-We use:
-
-- A **doubly linked list** to maintain the usage order (most recent at front).
-- An **unordered map** to provide O(1) access by key.
-
-Whenever a key is accessed or updated, its node is moved to the front. When capacity is reached, we remove the node at the end (least recently used).
-
----
-
-## 🔍 Sample Usage
+**Input:**
 
 ```cpp
-LRUCache cache(2);
-cache.put(1, 1);
-cache.put(2, 2);
-std::cout << cache.get(1) << std::endl; // 1
-cache.put(3, 3);                        // evicts key 2
-std::cout << cache.get(2) << std::endl; // -1
+LRUCache lru(2);  
+lru.put(1, 1);
+lru.put(2, 2);
+lru.get(1);       // returns 1
+lru.put(3, 3);    // evicts key 2
+lru.get(2);       // returns -1
+lru.put(4, 4);    // evicts key 1
+lru.get(1);       // returns -1
+lru.get(3);       // returns 3
+lru.get(4);       // returns 4
+```
+
+**Output:**
+
+```
+1
+-1
+-1
+3
+4
+```
+## 📁 Source Code
+
+👉 [LRUCache.cpp](./LRUCache.cpp)
+
+---
+
+## 🛠️ How to Compile
+
+```bash
+g++ LRUCache.cpp -o lru
+./lru
+```
+
+

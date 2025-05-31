@@ -1,6 +1,3 @@
-### MiniSolarSystem.cpp
-
-```cpp
 #include <bits/stdc++.h>
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
@@ -212,4 +209,3 @@ int main() {
         float angleMoon = currentFrame * 2.0f;
         glm::vec3 planet2Pos(8*cos(angle2), 0, 8*sin(angle2));
         glm::vec3 moonPos = planet2Pos + glm::vec3(1.5*cos(angleMoon), 0, 1.5*sin(angleMoon));
-```

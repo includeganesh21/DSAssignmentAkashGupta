@@ -22,6 +22,12 @@ Each question is organized into its own folder, including source code, problem d
 g++ Q1_LRUCache/LRUCache.cpp -o lru
 ./lru
 ```
+---
+
+```bash
+g++ Q2_MyHashMap/MyHashMap.cpp -o myhashmap
+./myhashmap
+```
 
 
 

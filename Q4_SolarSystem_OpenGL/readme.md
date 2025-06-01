@@ -36,16 +36,27 @@ Create a mini solar system visualization using OpenGL (ES 2.0+ or 3.0) that demo
 ## 🔗 Solution Files
 
 - [MiniSolarSystem.cpp](./MiniSolarSystem.cpp)  
-- [VertexShader.glsl](./VertexShader.glsl)  
-- [FragmentShader.glsl](./FragmentShader.glsl)  
 
 ---
 
-## 🛠️ Build & Run Instructions
+## 🛠️ Build & Run Instructions in macOS
 
 ```bash
+brew install glfw
+brew install glew
+brew install glm
+
+# check installation
+ls /opt/homebrew/include/GL/glew.h
+ls /opt/homebrew/lib/libGLEW*
+
 # Compile with appropriate OpenGL ES libraries and flags
-g++ MiniSolarSystem.cpp -o solar_system -lGL -lGLEW -lglfw
+clang++ -o solar_system solar_system.cpp -I/opt/homebrew/include -L/opt/homebrew/lib -lglfw -lglew -framework OpenGL
 
 # Run the application
 ./solar_system
+```
+
+## Output
+
+[OUTPUT](./question4output.mov)

@@ -1,5 +1,4 @@
 
-````markdown
 # Q1: Least Recently Used (LRU) Cache
 
 ## 🧩 Problem Statement

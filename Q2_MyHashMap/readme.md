@@ -1,7 +1,6 @@
-````markdown
 # Q2: Implement a Simplified HashMap
 
-## ❓ Problem Statement
+## 🧩 Problem Statement
 
 Implement a simplified version of a **HashMap** (also known as an unordered map or dictionary) **without using built-in hash table libraries** like `unordered_map`, `map`, or `dict`.
 

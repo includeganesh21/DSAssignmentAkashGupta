@@ -1,7 +1,6 @@
-```markdown
 # Q4: Mini Solar System Visualization using OpenGL
 
-## ❓ Problem Statement
+## 🧩 Problem Statement
 
 Create a mini solar system visualization using OpenGL (ES 2.0+ or 3.0) that demonstrates your understanding of the graphics pipeline, transformations, and shaders.
 
@@ -32,7 +31,6 @@ Create a mini solar system visualization using OpenGL (ES 2.0+ or 3.0) that demo
 - The application should run smoothly at approximately **30 FPS or higher**.
 - Use **VBOs/VAOs** or equivalent for rendering efficiency.
 
-``` 
 ---
 
 ## 🔗 Solution Files
@@ -40,8 +38,6 @@ Create a mini solar system visualization using OpenGL (ES 2.0+ or 3.0) that demo
 - [MiniSolarSystem.cpp](./MiniSolarSystem.cpp)  
 - [VertexShader.glsl](./VertexShader.glsl)  
 - [FragmentShader.glsl](./FragmentShader.glsl)  
-
-*(Add or update this section with your actual file names and links.)*
 
 ---
 
